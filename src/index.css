@@ -1,0 +1,8 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #8a64d1;
+    scroll-behavior: smooth;
+}

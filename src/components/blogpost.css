@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.blog-container {
+    font-family: "Poppins", sans-serif;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.blog-title h1 {
+    color: #333;
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.author-date {
+    margin-bottom: 15px;
+    color: #777;
+    font-size: 14px;
+}
+
+.separator {
+    height: 1px;
+    background-color: #e0e0e0;
+    margin-bottom: 15px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.desc-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.desc-container p {
+    font-size: 16px;
+    line-height: 2;
+    color: #555;
+}
+
+.suggested-blogs {
+    margin-top: 40px;
+}
+
+.suggested-blogs h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.suggested-blogs-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.suggested-blog-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    width: 200px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+.suggested-blog-card img {
+    width: 100%;
+    height: auto;
+}
+
+.suggested-blog-content {
+    padding: 10px;
+}
+
+.suggested-blog-content h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.read-more-link {
+    text-decoration: none;
+    color: #9671dc;
+    font-weight: 500;
+}
+
+.loading-message, .error-message, .no-blog-message {
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #555;
+    background-color: #9671dc;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .blog-title h1 {
+        font-size: 2.5rem;
+    }
+
+    .suggested-blogs-container {
+        gap: 15px;
+        
+    }
+
+    .suggested-blog-card {
+        width: 210px;
+    }
+
+    .desc-container p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-container {
+        padding: 10px;
+    }
+
+    .blog-title h1 {
+        font-size: 2rem;
+    }
+
+    .desc-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .desc-container p {
+        font-size: 14px;
+    }
+
+    .suggested-blog-card {
+        width: 100%;
+    }
+
+    .loading-message, .error-message, .no-blog-message {
+        max-width: 90%;
+        font-size: 1.2rem;
+    }
+}

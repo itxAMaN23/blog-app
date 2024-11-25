@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.auth-wrapper {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 15px;
+    text-align: center;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+.myForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    background-color: #332b42;
+    width: 100%;
+    max-width: 400px;
+}
+
+.myForm h1 {
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 2px solid #634897;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    background-color: transparent;
+}
+
+.input-group .icon {
+    margin-right: 10px;
+    color: #634897;
+}
+
+.input-group input {
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    background: transparent;
+    color: #fff;
+}
+
+.show-error {
+    background-color: #ff4d4f;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.show-error i {
+    margin-right: 8px;
+}
+
+.myForm button {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    background-color: #634897;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.myForm button:hover {
+    background-color: #795bb1;
+}
+
+.toggle-signup {
+    margin-top: 20px;
+    color: #fff;
+}
+
+.toggle-signup span {
+    color: #634897;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+@media (max-width: 1024px) {
+    .myForm {
+        padding: 20px;
+        max-width: 350px;
+        margin: 30px 0;
+    }
+
+    .input-group {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .input-group input {
+        font-size: 15px;
+    }
+
+    .show-error {
+        font-size: 15px;
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .myForm button {
+        font-size: 15px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .myForm {
+        padding: 15px;
+        max-width: 300px;
+        margin: 40px 0;
+    }
+
+    .input-group {
+        width: auto;
+        padding: 10px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+    }
+
+    .show-error {
+        font-size: 14px;
+        padding: 8px;
+        max-width: 100%;
+    }
+
+    .myForm button {
+        font-size: 14px;
+        width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .myForm {
+        padding: 10px;
+        max-width: 250px;
+        margin: 50px 0;
+    }
+
+    .input-group {
+        width: auto;
+        padding: 8px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+    }
+
+    .show-error {
+        font-size: 14px;
+        padding: 8px;
+        max-width: 100%;
+    }
+
+    .myForm button {
+        font-size: 14px;
+        width: auto;
+        font-family: "Poppins";
+    }
+}

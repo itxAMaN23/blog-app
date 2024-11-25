@@ -1,0 +1,68 @@
+.delete-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 400px;
+    padding: 12px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #d9534f;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeOut 3s forwards;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.blog-actions {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.edit-button, .delete-button {
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #5cb85c;
+    text-decoration: none;
+}
+
+.edit-button:hover {
+    background-color: #4cae4c;
+    transform: scale(1.05);
+}
+
+.delete-button {
+    background-color: #d9534f;
+}
+
+.delete-button:hover {
+    background-color: #c9302c;
+    transform: scale(1.05);
+}
+
+.edit-button i, .delete-button i {
+    margin-right: 4px;
+    font-size: 12px;
+}

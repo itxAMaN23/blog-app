@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.main {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.home-content, .trending-posts {
+    max-width: 1000px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(-60px);
+    transition: opacity 0.4s ease-out, transform 0.7s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .home-content h1,
+    .trending-posts h1 {
+        font-size: 1.5em;
+    }
+
+    .home-content .para {
+        font-size: 0.9em;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-content h1,
+    .trending-posts h1 {
+        font-size: 1.3em;
+    }
+
+    .home-content .para {
+        font-size: 0.8em;
+        line-height: 1.4;
+    }
+
+    .cards {
+        gap: 10px;
+    }
+}

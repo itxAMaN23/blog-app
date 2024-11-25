@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.create-blog {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    margin: 10px 0 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.create-blog h1 {
+    margin-bottom: 20px;
+    color: #634897;
+}
+
+.form {
+    background-color: #634897;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    margin: 10px 0 5px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.form input, .form textarea {
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 670px;
+    box-sizing: border-box;
+}
+
+.form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form button {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ff4081;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    max-width: 200px;
+    margin: auto;
+}
+
+.form button:hover {
+    background-color: #e0356d;
+}
+
+.show-errors, .show-success {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+}
+
+.show-errors {
+    color: #ff4d4f;
+    background-color: #f9d6d5;
+}
+
+.show-success {
+    color: #4CAF50;
+    background-color: #d4edda;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .form {
+        padding: 15px;
+    }
+
+    .form input, .form textarea {
+        padding: 8px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .create-blog {
+        padding: 0 5px;
+    }
+
+    .form {
+        padding: 10px;
+    }
+
+    .form input, .form textarea {
+        font-size: 0.9rem;
+        padding: 8px;
+        max-width: 100%;
+    }
+
+    .show-errors, .show-success {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
